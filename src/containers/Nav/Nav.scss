@@ -1,0 +1,24 @@
+@use "../../assets/sass/variables" as *;
+@use "../../assets/sass/mixins" as *;
+
+.nav {
+    position: fixed;
+    z-index: 3;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    color: $primary-color;
+
+    &__logo {
+        height: 50px;
+        fill:$primary-color;
+
+        &:hover {
+            opacity: 50%;
+        }
+    }
+
+    
+}

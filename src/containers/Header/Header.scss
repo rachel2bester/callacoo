@@ -3,24 +3,28 @@
 
 .header {
     //background-color: $primary-color;
-    height: 61px;
+    position:fixed;
+    z-index: 3;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    width: 100vw;
 
     svg {
         padding: 10px;
         path {
-            fill: $white
+            fill: $primary-color;
         }
     }
 
     &__logo {
-        height: 40px;
+        height: 70px;
+        margin-left: 5px
     }
     &__bars {
-        height: 45px;
+        height: 60px;
+        margin-right: 5px;
     }
     
 
