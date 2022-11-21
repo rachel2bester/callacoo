@@ -7,10 +7,11 @@
     width: 100vw;
     align-self: flex-start;
     align-items: center;
-    height: 80px;
+    height: 70px;
     color: $primary-color;
     display: grid;
     grid-template-columns: 140px 1fr;
+    border-bottom: 6px $primary-color double;
 
     &__logo {
         height: 50px;

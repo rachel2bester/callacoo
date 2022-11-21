@@ -6,7 +6,6 @@ const Header = () => {
         <div className="header">
             <svg
                 viewBox="0 0 879.000000 374.000000"
-                preserveAspectRatio="xMidYMid meet"
                 className="header__logo"
             >
                 <g

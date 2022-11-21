@@ -3,11 +3,13 @@
 
 .popup {
     justify-self: start;
-    margin-bottom: auto;
-    margin-top: 60px;
+    margin-bottom: none;
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    border-bottom: 6px $primary-color double;
+    width: 80vw;
 }
 
 @media only screen and (min-width: 769px) {
