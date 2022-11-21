@@ -1,9 +1,19 @@
 import React from 'react'
+import NavButtons from '../../components/NavButtons/NavButtons';
 import "./MenuPopup.scss"
 
-const MenuPopup = () => {
+const MenuPopup = (props) => {
+    const {displayPopUp} = props;
+
+    
     return (
-        <div>MenuPopup</div>
+        <>
+            {displayPopUp &&
+                <div className="popup">
+                    <NavButtons/>
+                </div>
+            }
+        </>
     )
 }
 

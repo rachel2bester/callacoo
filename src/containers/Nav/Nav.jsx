@@ -1,8 +1,11 @@
 import React from 'react'
 import NavButton from '../../components/NavButton/NavButton'
+import NavButtons from '../../components/NavButtons/NavButtons';
 import "./Nav.scss"
 
-const Nav = () => {
+const Nav = (props) => {
+    const {togglePopUp, displayPopUp} = props;
+
     return (
         <div className="nav">
             <svg
@@ -20,11 +23,16 @@ const Nav = () => {
                     <path d="M7165 3290 c-196 -25 -439 -113 -590 -213 -488 -322 -713 -924 -584 -1562 89 -438 388 -806 791 -974 425 -177 937 -138 1297 99 89 58 197 152 231 200 l20 28 -50 42 -50 42 -73 -74 c-144 -148 -341 -250 -563 -294 -122 -25 -376 -25 -497 -1 -551 110 -927 547 -988 1147 -44 442 132 900 445 1158 196 162 402 245 674 273 130 13 269 4 400 -27 173 -39 389 -153 491 -258 l44 -45 48 42 c27 23 49 47 49 53 0 18 -110 116 -187 167 -123 82 -261 137 -443 178 -108 24 -348 34 -465 19z" />
                 </g>
             </svg>
-            <NavButton title="About Me" linkTo=""/>
-            <NavButton title="House Whispering" linkTo=""/>
-            <NavButton title="Corporate Interiors" linkTo=""/>
-            <NavButton title="Full Turnkey" linkTo=""/>
-            <NavButton title="Contact Info" linkTo=""/>
+            <div className='nav__buttons'>
+                <NavButtons/>
+            </div>
+            
+            {displayPopUp 
+                ? <svg viewBox="0 0 256 256" className='nav__bars' onClick={togglePopUp}>
+                        <path d="M202.82861,197.17188a3.99991,3.99991,0,1,1-5.65722,5.65624L128,133.65723,58.82861,202.82812a3.99991,3.99991,0,0,1-5.65722-5.65624L122.343,128,53.17139,58.82812a3.99991,3.99991,0,0,1,5.65722-5.65624L128,122.34277l69.17139-69.17089a3.99991,3.99991,0,0,1,5.65722,5.65624L133.657,128Z"/>
+                    </svg>
+                : <svg viewBox="0 0 32 32" className='nav__bars' onClick={togglePopUp}><path d="M 4 7 L 4 9 L 28 9 L 28 7 Z M 4 15 L 4 17 L 28 17 L 28 15 Z M 4 23 L 4 25 L 28 25 L 28 23 Z"/></svg>
+            }
         </div>
     )
 }
