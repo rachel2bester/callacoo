@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/callacoo/static/css/main.5374af1a.css",
-    "main.js": "/callacoo/static/js/main.dfc6d23c.js",
+    "main.js": "/callacoo/static/js/main.6e350cc9.js",
     "static/js/787.b499c4c5.chunk.js": "/callacoo/static/js/787.b499c4c5.chunk.js",
     "static/media/desktop-image.WEBP": "/callacoo/static/media/desktop-image.5d67369532a48687ed6f.WEBP",
     "index.html": "/callacoo/index.html",
     "main.5374af1a.css.map": "/callacoo/static/css/main.5374af1a.css.map",
-    "main.dfc6d23c.js.map": "/callacoo/static/js/main.dfc6d23c.js.map",
+    "main.6e350cc9.js.map": "/callacoo/static/js/main.6e350cc9.js.map",
     "787.b499c4c5.chunk.js.map": "/callacoo/static/js/787.b499c4c5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5374af1a.css",
-    "static/js/main.dfc6d23c.js"
+    "static/js/main.6e350cc9.js"
   ]
 }
