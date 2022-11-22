@@ -1,8 +1,7 @@
 {
   "name": "callacoo",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://rachel2bester.github.io/react-gh-pages",
+  "homepage": "https://rachel2bester.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
