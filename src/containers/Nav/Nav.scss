@@ -13,6 +13,10 @@
     grid-template-columns: 140px 1fr;
     border-bottom: 6px $primary-color double;
 
+    &--opaque {
+        background-color: $white;
+    }
+
     &__logo {
         height: 50px;
         fill: $primary-color;

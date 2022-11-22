@@ -1,8 +1,11 @@
 @use "../../assets/sass/variables" as *;
 @use "../../assets/sass/mixins" as *;
+@use "../../assets/sass/reset" as *;
 
-.header {
-    //background-color: $primary-color;
+.about-me {
+    display: flex;
+    justify-content: center;
+
     &__popup {
         position: fixed;
         display: flex;
@@ -10,5 +13,8 @@
         width: 100vw;
         background-color: $white;
     }
-}
 
+    &__content {
+        margin: 90px;
+    }
+}

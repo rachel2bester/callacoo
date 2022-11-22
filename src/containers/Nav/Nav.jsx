@@ -4,10 +4,12 @@ import NavButtons from '../../components/NavButtons/NavButtons';
 import "./Nav.scss"
 
 const Nav = (props) => {
-    const {togglePopUp, displayPopUp} = props;
+    const {toggleDisplayPopUp, displayPopUp, clear} = props;
+
+    const navClassName = clear ? "nav" : "nav nav--opaque"
 
     return (
-        <div className="nav">
+        <div className={navClassName}>
             <svg
                 viewBox="0 0 879.000000 374.000000"
                 preserveAspectRatio="xMidYMid meet"
@@ -28,10 +30,10 @@ const Nav = (props) => {
             </div>
             
             {displayPopUp 
-                ? <svg viewBox="0 0 256 256" className='nav__bars' onClick={togglePopUp}>
+                ? <svg viewBox="0 0 256 256" className='nav__bars' onClick={toggleDisplayPopUp}>
                         <path d="M202.82861,197.17188a3.99991,3.99991,0,1,1-5.65722,5.65624L128,133.65723,58.82861,202.82812a3.99991,3.99991,0,0,1-5.65722-5.65624L122.343,128,53.17139,58.82812a3.99991,3.99991,0,0,1,5.65722-5.65624L128,122.34277l69.17139-69.17089a3.99991,3.99991,0,0,1,5.65722,5.65624L133.657,128Z"/>
                     </svg>
-                : <svg viewBox="0 0 32 32" className='nav__bars' onClick={togglePopUp}><path d="M 4 7 L 4 9 L 28 9 L 28 7 Z M 4 15 L 4 17 L 28 17 L 28 15 Z M 4 23 L 4 25 L 28 25 L 28 23 Z"/></svg>
+                : <svg viewBox="0 0 32 32" className='nav__bars' onClick={toggleDisplayPopUp}><path d="M 4 7 L 4 9 L 28 9 L 28 7 Z M 4 15 L 4 17 L 28 17 L 28 15 Z M 4 23 L 4 25 L 28 25 L 28 23 Z"/></svg>
             }
         </div>
     )
