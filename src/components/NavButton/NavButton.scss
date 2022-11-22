@@ -9,6 +9,15 @@
     padding: 7px;
     text-align: center;
     z-index: 3;
+    text-decoration: none;
+
+    &--current {
+        font-weight: bold;
+        :hover {
+            opacity: 100%;
+        }
+    }
+    
 
     &:hover {
         opacity: 70%;

@@ -1,17 +1,17 @@
 import React from "react";
-import Nav from "./../Nav/Nav";
-import MenuPopup from "../MenuPopup/MenuPopup";
 import "./AboutMe.scss";
 import Header from "../Header/Header";
+import MainHeading from "../../components/MainHeading/MainHeading";
 
 const AboutMe = (props) => {
-    const { toggleDisplayPopUp, displayPopUp } = props;
+    const { toggleDisplayPopUp, displayPopUp, closePopUp} = props;
 
     return (
         <div className="about-me">
             
-            <Header displayPopUp={displayPopUp} toggleDisplayPopUp={toggleDisplayPopUp}/>
+            <Header displayPopUp={displayPopUp} toggleDisplayPopUp={toggleDisplayPopUp} closePopUp={closePopUp}/>
             <div className="about-me__content">
+                <MainHeading title="About Me"/>
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

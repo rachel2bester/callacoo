@@ -7,15 +7,14 @@ import NavButton from "../../components/NavButton/NavButton";
 import MenuPopup from "../MenuPopup/MenuPopup";
 import Nav from "./../Nav/Nav";
 
-const Home = ({displayPopUp, toggleDisplayPopUp}) => {
+const Home = ({displayPopUp, toggleDisplayPopUp, closePopUp}) => {
     return (
         <div className="home">
-            <Nav toggleDisplayPopUp={toggleDisplayPopUp} displayPopUp={displayPopUp} clear={true}/>
+            <Nav toggleDisplayPopUp={toggleDisplayPopUp} closePopUp={closePopUp} displayPopUp={displayPopUp} clear={true}/>
             <img src={desktopImg} className="home__img" />
             <div className="home__overlay"></div>
-
             <div className="home__main">
-                <MenuPopup displayPopUp={displayPopUp} />
+                <MenuPopup displayPopUp={displayPopUp} closePopUp={closePopUp}/>
 
                 <svg viewBox="0 0 1880.000000 1001.000000" className="home__logo">
                     <g transform="translate(0.000000,1001.000000) scale(0.100000,-0.100000)" stroke="none">

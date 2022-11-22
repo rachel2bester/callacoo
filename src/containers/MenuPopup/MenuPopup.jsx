@@ -3,14 +3,14 @@ import NavButtons from '../../components/NavButtons/NavButtons';
 import "./MenuPopup.scss"
 
 const MenuPopup = (props) => {
-    const {displayPopUp} = props;
+    const {displayPopUp, closePopUp} = props;
 
     
     return (
         <>
             {displayPopUp &&
                 <div className="popup">
-                    <NavButtons/>
+                    <NavButtons closePopUp={closePopUp}/>
                 </div>
             }
         </>
