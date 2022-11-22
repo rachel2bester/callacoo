@@ -5,7 +5,7 @@ import "./NavButton.scss"
 const NavButton = (props) => {
     const {title, linkTo, closePopUp} = props;
     const location = useLocation();
-    const className = (linkTo == location.pathname ? "nav-button nav-button--current" : "nav-button");
+    const className = (linkTo === location.pathname ? "nav-button nav-button--current" : "nav-button");
     
     return (
         <Link to={linkTo} className={className} onClick={closePopUp}> 

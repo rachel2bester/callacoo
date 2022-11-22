@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import NavButton from '../../components/NavButton/NavButton'
 import NavButtons from '../../components/NavButtons/NavButtons';
 import "./Nav.scss"
 

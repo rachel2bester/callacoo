@@ -1,5 +1,4 @@
 import './App.css';
-import Header from './containers/Header/Header';
 import React, { useState } from "react";
 import Home from './containers/Home/Home';
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';

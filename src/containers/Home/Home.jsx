@@ -1,9 +1,6 @@
-import React, { useState } from "react";
-import Header from "../Header/Header";
+import React from "react";
 import "./Home.scss";
-import mobileImg from "../../assets/images/mobile-image.PNG";
 import desktopImg from "../../assets/images/desktop-image.WEBP";
-import NavButton from "../../components/NavButton/NavButton";
 import MenuPopup from "../MenuPopup/MenuPopup";
 import Nav from "./../Nav/Nav";
 
@@ -11,7 +8,7 @@ const Home = ({displayPopUp, toggleDisplayPopUp, closePopUp}) => {
     return (
         <div className="home">
             <Nav toggleDisplayPopUp={toggleDisplayPopUp} closePopUp={closePopUp} displayPopUp={displayPopUp} clear={true}/>
-            <img src={desktopImg} className="home__img" />
+            <img src={desktopImg} className="home__img" alt="a living room"/>
             <div className="home__overlay"></div>
             <div className="home__main">
                 <MenuPopup displayPopUp={displayPopUp} closePopUp={closePopUp}/>
